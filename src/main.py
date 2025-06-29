@@ -196,4 +196,4 @@ def main():
     print(f"Status: {status_enum}")
 
 if __name__ == "__main__":
-    test_run()
+    main()
