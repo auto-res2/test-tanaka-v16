@@ -1,0 +1,136 @@
+Using device: cuda
+================================================================================
+IL-WGAN (Isometric Latent Wasserstein GAN) Experimental Framework
+================================================================================
+Device: cuda
+CUDA Available: True
+GPU: Tesla T4
+GPU Memory: 16.7 GB
+================================================================================
+
+==================================================
+EXPERIMENT 1: ABLATION STUDY
+==================================================
+Comparing IL-WGAN (with isometric regularization) vs LWGAN (baseline)
+Starting Ablation Experiment ...
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Downloading: "https://download.pytorch.org/models/alexnet-owt-7be5be79.pth" to /home/runner/.cache/torch/hub/checkpoints/alexnet-owt-7be5be79.pth
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Epoch 1/5 | IL-WGAN Loss: 16.5234 | LWGAN Loss: 16.3247
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Epoch 2/5 | IL-WGAN Loss: 17.2216 | LWGAN Loss: 17.1495
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Epoch 3/5 | IL-WGAN Loss: 16.6500 | LWGAN Loss: 16.7375
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Epoch 4/5 | IL-WGAN Loss: 16.2023 | LWGAN Loss: 16.0156
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Epoch 5/5 | IL-WGAN Loss: 15.7856 | LWGAN Loss: 15.7235
+Ablation experiment completed with latent interpolation plot saved.
+
+==================================================
+EXPERIMENT 2: ADAPTIVE WEIGHTING
+==================================================
+Testing adaptive weighting mechanism for isometric loss
+Starting Adaptive Weighting Experiment ...
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Epoch 1/20 | Loss: 16.5051 | lambda_iso: 1.0000 | Val Loss: 16.4994
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Epoch 2/20 | Loss: 17.1500 | lambda_iso: 1.0000 | Val Loss: 17.1445
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Epoch 3/20 | Loss: 16.6111 | lambda_iso: 1.0000 | Val Loss: 16.6053
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Epoch 4/20 | Loss: 16.1898 | lambda_iso: 1.0000 | Val Loss: 16.1897
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Epoch 5/20 | Loss: 15.7849 | lambda_iso: 1.0000 | Val Loss: 15.7851
+Adaptive update: Increased lambda_iso to 1.1000
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Epoch 6/20 | Loss: 15.3985 | lambda_iso: 1.1000 | Val Loss: 15.3903
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Epoch 7/20 | Loss: 15.0787 | lambda_iso: 1.1000 | Val Loss: 15.0743
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Epoch 8/20 | Loss: 14.6007 | lambda_iso: 1.1000 | Val Loss: 14.6020
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Epoch 9/20 | Loss: 14.2095 | lambda_iso: 1.1000 | Val Loss: 14.2046
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Epoch 10/20 | Loss: 13.5719 | lambda_iso: 1.1000 | Val Loss: 13.5596
+Adaptive update: Increased lambda_iso to 1.2100
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Epoch 11/20 | Loss: 13.0575 | lambda_iso: 1.2100 | Val Loss: 13.0694
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Epoch 12/20 | Loss: 12.4714 | lambda_iso: 1.2100 | Val Loss: 12.4656
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Epoch 13/20 | Loss: 11.9582 | lambda_iso: 1.2100 | Val Loss: 11.9628
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Epoch 14/20 | Loss: 11.3820 | lambda_iso: 1.2100 | Val Loss: 11.3669
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Epoch 15/20 | Loss: 11.2356 | lambda_iso: 1.2100 | Val Loss: 11.2345
+Adaptive update: Increased lambda_iso to 1.3310
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Epoch 16/20 | Loss: 10.5679 | lambda_iso: 1.3310 | Val Loss: 10.5514
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Epoch 17/20 | Loss: 9.8075 | lambda_iso: 1.3310 | Val Loss: 9.8207
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Epoch 18/20 | Loss: 9.3369 | lambda_iso: 1.3310 | Val Loss: 9.3568
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Epoch 19/20 | Loss: 8.8832 | lambda_iso: 1.3310 | Val Loss: 8.8534
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Epoch 20/20 | Loss: 8.1640 | lambda_iso: 1.3310 | Val Loss: 8.1484
+Adaptive update: Increased lambda_iso to 1.4641
+Adaptive weighting experiment plot saved (.research/iteration1/images/adaptive_lambda_iso.pdf).
+Adaptive weighting experiment completed.
+
+==================================================
+EXPERIMENT 3: LATENT SPACE GEOMETRY ANALYSIS
+==================================================
+Analyzing latent space structure and geometric properties
+Starting Latent Space Geometry Experiment ...
+Starting Latent Space Analysis ...
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+Pearson correlation coefficient between latent Euclidean and LPIPS distances: -0.1015 (p=0.6369)
+Latent space t-SNE plot saved (.research/iteration1/images/latent_tsne_visualization.pdf).
+Latent space geometry experiment completed.
+
+================================================================================
+ALL EXPERIMENTS COMPLETED SUCCESSFULLY
+================================================================================
+Generated PDF plots saved in: .research/iteration1/images/
+- latent_interpolation_IL-WGAN.pdf
+- adaptive_lambda_iso.pdf
+- latent_tsne_visualization.pdf
+================================================================================
+Status: stopped

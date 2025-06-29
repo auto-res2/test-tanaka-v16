@@ -1,0 +1,13 @@
+/home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  0%|          | 0.00/233M [00:00<?, ?B/s] 11%|█         | 25.8M/233M [00:00<00:00, 269MB/s] 23%|██▎       | 53.6M/233M [00:00<00:00, 282MB/s] 35%|███▌      | 82.1M/233M [00:00<00:00, 289MB/s] 47%|████▋     | 110M/233M [00:00<00:00, 292MB/s]  59%|█████▉    | 138M/233M [00:00<00:00, 289MB/s] 72%|███████▏  | 167M/233M [00:00<00:00, 293MB/s] 84%|████████▍ | 196M/233M [00:00<00:00, 295MB/s] 96%|█████████▌| 224M/233M [00:00<00:00, 296MB/s]100%|██████████| 233M/233M [00:00<00:00, 292MB/s]
+/home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/runner/work/_tool/Python/3.10.18/x64/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
